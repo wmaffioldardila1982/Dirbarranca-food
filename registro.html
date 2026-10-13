@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar mi puesto - BarrancaFood</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="logo-barrancafood.svg" alt="BarrancaFood" width="200" class="me-2">
+      
+    </a>
+  </div>
+</nav>
+
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        
+        <div class="text-center mb-4">
+          <h1 class="display-6 fw-bold">📝 Registra tu puesto</h1>
+          <p class="text-muted">¡Que todos en Barranca conozcan tu sazón! Es 100% gratis.</p>
+        </div>
+
+        <div class="alert alert-info">
+          <i class="bi bi-info-circle"></i> 
+          <strong>¿Quieres aparecer primero?</strong> Con el <strong>Perfil Oro</strong> 
+          ($15.000/mes) destacamos tu puesto. Escríbenos por WhatsApp después de registrarte.
+        </div>
+
+        <form id="formRegistro" class="card p-4 shadow-sm">
+          
+          <div class="mb-3">
+            <label class="form-label fw-bold">Nombre del negocio *</label>
+            <input type="text" name="nombre" class="form-control" required 
+                   placeholder="Ej: Los Perros de Memo">
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-bold">Categoría *</label>
+              <select name="categoria" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option>Perros calientes</option>
+                <option>Hamburguesas</option>
+                <option>Mazorcadas</option>
+                <option>Fritos</option>
+                <option>Raspaos</option>
+                <option>Crepes y postres</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-bold">Barrio / Sector *</label>
+              <select name="barrio" class="form-select" required>
+                <option value="">Selecciona...</option>
+                <option>Sector Comercial</option>
+                <option>Galán</option>
+                <option>Cavipetrol</option>
+                <option>Parnaso</option>
+                <option>Centro</option>
+                <option>La Fortuna</option>
+                <option>Vivienda Popular</option>
+                <option>Otro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">
+              🌟 Tu plato estrella (el "especial")
+            </label>
+            <input type="text" name="especialidad" class="form-control" 
+                   placeholder="Ej: Hamburguesa con piña y queso fundido">
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-bold">WhatsApp (con 57) *</label>
+              <input type="tel" name="whatsapp" class="form-control" required 
+                     placeholder="573001234567" pattern="57[0-9]{10}">
+              <small class="text-muted">Incluye 57 al inicio, sin espacios</small>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label class="form-label fw-bold">Horario *</label>
+              <input type="text" name="horario" class="form-control" required 
+                     placeholder="Ej: Lunes a sábado, 6:00 PM a 11:00 PM">
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Ubicación en Google Maps *</label>
+            <input type="url" name="maps" class="form-control" required 
+                   placeholder="https://maps.google.com/...">
+            <small class="text-muted">
+              <i class="bi bi-info-circle"></i> 
+              Abre Google Maps → ubica tu puesto → Compartir → Copiar enlace
+            </small>
+          </div>
+
+         <div class="mb-3">
+  <label class="form-label fw-bold">📸 Fotos de tu puesto (hasta 5)</label>
+  <input type="url" name="foto1" class="form-control mb-2" 
+         placeholder="URL de la foto 1 (obligatoria)">
+  <input type="url" name="foto2" class="form-control mb-2" 
+         placeholder="URL de la foto 2 (opcional)">
+  <input type="url" name="foto3" class="form-control mb-2" 
+         placeholder="URL de la foto 3 (opcional)">
+  <input type="url" name="foto4" class="form-control mb-2" 
+         placeholder="URL de la foto 4 (opcional)">
+  <input type="url" name="foto5" class="form-control mb-2" 
+         placeholder="URL de la foto 5 (opcional)">
+  <small class="text-muted">
+    <i class="bi bi-info-circle"></i> 
+    Sube tus fotos a <a href="https://imgur.com" target="_blank">imgur.com</a> o 
+    <a href="https://postimages.org" target="_blank">postimages.org</a> y pega los enlaces
+  </small>
+</div>
+
+          <div class="mb-3">
+  <label class="form-label fw-bold">🎬 Video promocional</label>
+  <input type="url" name="video" class="form-control" 
+         placeholder="Pega el enlace del video...">
+  <small class="text-muted">
+    <i class="bi bi-check-circle text-success"></i> Aceptamos:
+    <ul class="mb-0 mt-1">
+      <li>YouTube: <code>youtube.com/watch?v=...</code></li>
+      <li>Facebook: <code>facebook.com/.../videos/...</code></li>
+      <li>Instagram Reels: <code>instagram.com/reel/...</code></li>
+      <li>TikTok: <code>tiktok.com/@usuario/video/...</code></li>
+      <li>Google Drive: archivo compartido públicamente</li>
+      <li>Video directo: <code>.../video.mp4</code></li>
+    </ul>
+    <strong class="text-warning">⚠️ El video debe ser público.</strong>
+  </small>
+</div>
+          <button type="submit" class="btn btn-danger btn-lg w-100">
+            <i class="bi bi-send"></i> Enviar registro
+          </button>
+
+          <div id="mensaje" class="mt-3"></div>
+        </form>
+
+        <div class="text-center mt-4">
+          <a href="index.html" class="text-decoration-none">
+            <i class="bi bi-arrow-left"></i> Volver al directorio
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script>
+    const form = document.getElementById('formRegistro');
+    const mensaje = document.getElementById('mensaje');
+
+    form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const btn = form.querySelector('button[type=submit]');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner-border spinner-border-sm"></span> Enviando...';
+  
+  const data = Object.fromEntries(new FormData(form));
+  
+  // Convertir fotos a array
+  const fotos = [];
+  for (let i = 1; i <= 5; i++) {
+    if (data[`foto${i}`]) fotos.push(data[`foto${i}`]);
+  }
+  delete data.foto1;
+  delete data.foto2;
+  delete data.foto3;
+  delete data.foto4;
+  delete data.foto5;
+  
+  try {
+    await db.collection('negocios').add({
+      ...data,
+      fotos: fotos,
+      fechaRegistro: new Date().toISOString(),
+      oro: false,
+      recomendado: false,
+      activo: true
+    });
+    
+    mensaje.innerHTML = `
+      <div class="alert alert-success">
+        <i class="bi bi-check-circle-fill"></i> 
+        ¡Listo! Tu puesto fue registrado. Lo revisaremos y aparecerá en el directorio pronto.
+      </div>
+    `;
+    form.reset();
+  } catch (err) {
+    console.error(err);
+    mensaje.innerHTML = `
+      <div class="alert alert-danger">
+        <i class="bi bi-x-circle-fill"></i> Error al enviar. Intenta de nuevo.
+      </div>
+    `;
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '<i class="bi bi-send"></i> Enviar registro';
+  }
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 350" width="1000" height="350">
+  <defs>
+    <linearGradient id="flameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF4500;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FF6B35;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- ============ ICONO (izquierda) ============ -->
+  
+  <!-- Llama horizontal -->
+  <path d="M140 60 C160 45, 190 40, 220 45 C245 50, 260 60, 270 68 C255 63, 235 61, 220 64 C240 69, 255 78, 262 86 C248 82, 228 79, 212 77 C225 85, 238 98, 242 106 C228 99, 210 89, 195 83 C202 93, 210 107, 212 115 C200 107, 185 95, 172 87 C176 96, 180 110, 180 118 C168 110, 153 97, 142 89 C145 97, 148 110, 148 118 C138 110, 125 97, 117 89 C119 96, 119 106, 117 112 C110 104, 100 92, 93 84 C95 90, 95 98, 93 103 C89 94, 85 83, 89 69 C96 64, 110 58, 130 53 C137 51, 144 50, 150 58 Z" 
+        fill="url(#flameGrad)"/>
+  
+  <!-- Torre de la tea -->
+  <rect x="120" y="120" width="32" height="100" fill="#2C2C2C" rx="2"/>
+  
+  <!-- Plataformas de la torre -->
+  <rect x="115" y="135" width="42" height="8" fill="#1A1A1A" rx="1"/>
+  <rect x="115" y="165" width="42" height="8" fill="#1A1A1A" rx="1"/>
+  <rect x="115" y="195" width="42" height="8" fill="#1A1A1A" rx="1"/>
+  
+  <!-- Parte superior de la torre -->
+  <rect x="115" y="115" width="42" height="12" fill="#1A1A1A" rx="2"/>
+  
+  <!-- Pin de ubicación completo -->
+  <path d="M136 230 C105 230, 85 250, 85 280 C85 310, 136 330, 136 330 C136 330, 187 310, 187 280 C187 250, 167 230, 136 230 Z" 
+        fill="#FF4500"/>
+  
+  <!-- Círculo interior del pin -->
+  <circle cx="136" cy="280" r="22" fill="white"/>
+  
+  
+  <!-- ============ TEXTO (derecha, bien separado) ============ -->
+  
+  <!-- "Barranca" en negro -->
+  <text x="220" y="240" 
+        font-family="'Montserrat', 'Segoe UI', Arial, sans-serif" 
+        font-size="110" 
+        font-weight="900" 
+        fill="#2C2C2C" 
+        letter-spacing="-1">
+    Barranca
+  </text>
+  
+  <!-- "Food" en rojo/naranja (desplazado para no superponerse) -->
+  <text x="720" y="240" 
+        font-family="'Montserrat', 'Segoe UI', Arial, sans-serif" 
+        font-size="110" 
+        font-weight="900" 
+        fill="#FF4500" 
+        letter-spacing="-1">
+    Food
+  </text>
+</svg>
