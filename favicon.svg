@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Llama simple (sin gradientes complejos) -->
+  <path d="M32 8 C32 8, 24 16, 24 24 C24 30, 28 34, 32 34 C36 34, 40 30, 40 24 C40 16, 32 8, 32 8 Z" 
+        fill="#FF6B35"/>
+  
+  <!-- Torre simplificada -->
+  <rect x="28" y="34" width="8" height="12" fill="#2C2C2C"/>
+  
+  <!-- Pin de ubicación -->
+  <path d="M32 46 C26 46, 22 50, 22 56 C22 62, 32 64, 32 64 C32 64, 42 62, 42 56 C42 50, 38 46, 32 46 Z" 
+        fill="#FF4500"/>
+  
+  <!-- Círculo blanco del pin -->
+  <circle cx="32" cy="56" r="4" fill="white"/>
+</svg>
